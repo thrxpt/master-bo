@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
 import { cn } from '@/lib/utils'
+import { Toaster } from 'sonner'
 
 const sdRangver = localFont({
   src: '../fonts/SdRangver.ttf',
@@ -40,6 +41,16 @@ export default function RootLayout({
           geistMono.variable
         )}
       >
+        <Toaster
+          theme="dark"
+          position="top-center"
+          toastOptions={{
+            style: {
+              background: '#171717',
+              color: '#e8eaed',
+            },
+          }}
+        />
         {children}
       </body>
     </html>

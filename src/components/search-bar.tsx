@@ -2,6 +2,7 @@
 
 import { ClipboardCopy, X } from 'lucide-react'
 import { useEffect, useState, type FC } from 'react'
+import { toast } from 'sonner'
 
 const SearchBar: FC = () => {
   const [search, setSearch] = useState('')
@@ -11,7 +12,7 @@ const SearchBar: FC = () => {
   const [loadingText, setLoadingText] = useState('')
 
   const whyPressThisButton = () => {
-    alert('กดไม่ได้นะจ๊ะ')
+    toast('กดไม่ได้นะจ๊ะ')
   }
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -91,6 +92,7 @@ const SearchBar: FC = () => {
 
   const copyToClipboard = (text: string) => {
     navigator.clipboard.writeText(text)
+    toast.success('ก๊อปปี้ ทู คลิปบอร์ด ซัคเซสฟูลลี่')
   }
 
   const clearInput = () => {

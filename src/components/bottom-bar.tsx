@@ -1,10 +1,11 @@
 'use client'
 
 import { type FC } from 'react'
+import { toast } from 'sonner'
 
 const BottomBar: FC = () => {
   const whyPressThisButton = () => {
-    alert('กดไม่ได้นะจ๊ะ')
+    toast('กดไม่ได้นะจ๊ะ')
   }
 
   return (
