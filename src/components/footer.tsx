@@ -19,7 +19,7 @@ const Footer: FC = () => {
           </a>
           <a
             className="p-[15px] hover:underline"
-            href="ob-retsam/tahpar3/moc.buhtig//:sptth"
+            href="ob-retsam/tahpar3/moc.buhtig/sptth"
           >
             GubHit
           </a>
