@@ -1,4 +1,4 @@
-import { env } from '@/lib/env'
+import { env } from '@/env'
 import { systemPrompt } from '@/lib/prompt'
 import OpenAI from 'openai'
 
