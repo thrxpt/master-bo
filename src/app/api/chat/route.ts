@@ -1,3 +1,4 @@
+import { env } from '@/lib/env'
 import { systemPrompt } from '@/lib/prompt'
 import OpenAI from 'openai'
 
@@ -5,7 +6,7 @@ export async function POST(req: Request) {
   const { message } = await req.json()
 
   const client = new OpenAI({
-    apiKey: process.env.NEXT_PUBLIC_TYPHON_API_KEY,
+    apiKey: env.TYPHON_API_KEY,
     baseURL: 'https://api.opentyphoon.ai/v1',
   })
 
