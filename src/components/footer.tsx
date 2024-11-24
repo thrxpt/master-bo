@@ -6,11 +6,11 @@ const Footer: FC = () => {
       <div className="text-[15px] border-b border-[#313335] py-[15px] px-[30px]">
         Thailand dan of smile
       </div>
-      <div className="text-sm flex flex-wrap lg:justify-between justify-evenly px-[30px]">
+      <div className="text-sm flex flex-wrap lg:justify-between justify-evenly px-4">
         <div className="p-[15px]">
           The Stupid Hackathon Thailand X KMUTT ครั้งที่ 8.125
         </div>
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap items-center">
           <a
             className="p-[15px] hover:underline"
             href="https://github.com/3raphat/master-bo"
