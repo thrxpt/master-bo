@@ -1,15 +1,19 @@
 import { Banner } from '@/components/banner'
 import { BottomBar } from '@/components/bottom-bar'
+import { Footer } from '@/components/footer'
 import { SearchBar } from '@/components/search-bar'
 
 export default function Home() {
   return (
-    <div className="grid place-items-center h-screen w-full">
-      <div>
-        <Banner />
-        <SearchBar />
-        <BottomBar />
+    <div className="flex flex-col h-screen w-full">
+      <div className="grid place-items-center flex-1">
+        <div>
+          <Banner />
+          <SearchBar />
+          <BottomBar />
+        </div>
       </div>
+      <Footer />
     </div>
   )
 }
