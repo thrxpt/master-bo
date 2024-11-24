@@ -6,7 +6,7 @@ export async function POST(req: Request) {
   const { message } = await req.json()
 
   const client = new OpenAI({
-    apiKey: env.TYPHON_API_KEY,
+    apiKey: env.TYPHOON_API_KEY,
     baseURL: 'https://api.opentyphoon.ai/v1',
   })
 

@@ -3,10 +3,10 @@ import { z } from 'zod'
 
 export const env = createEnv({
   server: {
-    TYPHON_API_KEY: z.string(),
+    TYPHOON_API_KEY: z.string(),
   },
   client: {},
   runtimeEnv: {
-    TYPHON_API_KEY: process.env.TYPHON_API_KEY,
+    TYPHOON_API_KEY: process.env.TYPHOON_API_KEY,
   },
 })
