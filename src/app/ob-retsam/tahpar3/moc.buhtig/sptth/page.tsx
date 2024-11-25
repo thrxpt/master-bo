@@ -1,4 +1,9 @@
+import type { Metadata } from 'next'
 import { type FC } from 'react'
+
+export const metadata: Metadata = {
+  title: 'บัดโจ๋',
+}
 
 const Page: FC = () => {
   return (
