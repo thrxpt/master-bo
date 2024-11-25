@@ -106,7 +106,7 @@ const SearchBar: FC = () => {
   }
 
   return (
-    <div className="flex flex-col items-center gap-4 w-full max-w-[584px] min-w-[480px]">
+    <div className="flex flex-col items-center gap-4 max-w-[584px] w-full mx-auto">
       <form
         onSubmit={handleSubmit}
         className="bg-[#4d5156] hover:bg-[#575b61] h-[44px] rounded-full border border-transparent w-full flex items-center"

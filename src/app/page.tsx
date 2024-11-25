@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="flex flex-col h-screen w-full">
       <div className="grid place-items-center flex-1">
-        <div>
+        <div className="w-full px-4">
           <Banner />
           <SearchBar />
           <BottomBar />
