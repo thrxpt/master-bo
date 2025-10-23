@@ -11,7 +11,7 @@ export async function POST(req: Request) {
   })
 
   const chatCompletion = await client.chat.completions.create({
-    model: 'typhoon-v2-70b-instruct',
+    model: 'typhoon-v2.1-12b-instruct',
     messages: [
       { role: 'system', content: systemPrompt },
       { role: 'user', content: message },
